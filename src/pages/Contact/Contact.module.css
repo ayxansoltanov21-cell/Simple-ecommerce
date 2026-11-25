@@ -1,0 +1,810 @@
+
+.contactPage {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  color: #171717;
+}
+
+
+
+.hero {
+  background: #f4f5f7;
+  padding: 65px 0 45px;
+}
+
+.heroContainer {
+  width: min(1200px, 90%);
+  min-height: 420px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+}
+
+.eyebrow,
+.sectionEyebrow {
+  display: block;
+  color: #888;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+.heroContent h1 {
+  font-size: clamp(43px, 5vw, 65px);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -3px;
+  margin-bottom: 22px;
+}
+
+.heroContent h1 span {
+  color: #858995;
+}
+
+.heroContent > p {
+  max-width: 460px;
+  color: #888;
+  font-size: 14px;
+  line-height: 1.9;
+  margin-bottom: 28px;
+}
+
+.heroButton {
+  padding: 15px 21px;
+  background: #171717;
+  color: white;
+  border: 1px solid #171717;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.heroButton span {
+  margin-left: 15px;
+  font-size: 17px;
+}
+
+.heroButton:hover {
+  background: #444;
+  transform: translateY(-3px);
+}
+
+.heroNote {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 32px;
+  color: #888;
+  font-size: 12px;
+}
+
+.onlineDot {
+  width: 8px;
+  height: 8px;
+  background: #1ca36d;
+  border-radius: 50%;
+}
+
+
+
+.heroVisual {
+  position: relative;
+  min-height: 410px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.visualCircle {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: #e1e3e9;
+}
+
+.heroVisual > img {
+  position: relative;
+  z-index: 1;
+  width: 88%;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 13px;
+  transform: rotate(2deg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.floatingMessage {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 17px 20px;
+  background: white;
+  border-radius: 9px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.09);
+}
+
+.floatingMessage > span {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  background: #f1f2f5;
+  border-radius: 50%;
+  font-size: 21px;
+}
+
+.floatingMessage strong {
+  font-size: 12px;
+}
+
+.floatingMessage p {
+  color: #999;
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+.visualDecoration {
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  color: #b5b9c3;
+  font-size: 45px;
+}
+
+
+
+.contactInfoSection {
+  width: min(1200px, 90%);
+  margin: 90px auto;
+}
+
+.sectionHeading {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sectionHeading h2 {
+  font-size: clamp(28px, 4vw, 38px);
+  letter-spacing: -1.5px;
+  margin-bottom: 12px;
+}
+
+.sectionHeading h2 span {
+  color: #9296a0;
+}
+
+.sectionHeading > p {
+  color: #888;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 17px;
+}
+
+.infoCard {
+  padding: 27px 20px;
+  border: 1px solid #eee;
+  border-radius: 11px;
+  transition: 0.3s;
+}
+
+.infoCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+  border-color: #ddd;
+}
+
+.infoIcon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  background: #f3f4f6;
+  border-radius: 10px;
+  font-size: 23px;
+  margin-bottom: 22px;
+}
+
+.infoCard > span {
+  display: block;
+  color: #999;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+
+.infoCard h3 {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.infoCard a {
+  display: inline-block;
+  color: #171717;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.infoCard a:hover {
+  color: #777;
+}
+
+.infoCard > p {
+  color: #999;
+  font-size: 11px;
+  line-height: 1.7;
+  margin-top: 13px;
+}
+
+.infoCard .locationText,
+.infoCard .hoursText {
+  color: #555;
+  font-size: 11px;
+  line-height: 1.9;
+}
+
+
+
+.formSection {
+  width: min(1200px, 90%);
+  margin: 110px auto;
+  padding: 55px;
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  align-items: start;
+  gap: 70px;
+  background: #f5f6f8;
+  border-radius: 14px;
+  scroll-margin-top: 30px;
+}
+
+.formIntro {
+  padding-top: 15px;
+}
+
+.formIntro h2 {
+  font-size: clamp(35px, 4vw, 46px);
+  line-height: 1.15;
+  letter-spacing: -2px;
+  margin-bottom: 20px;
+}
+
+.formIntro h2 span {
+  color: #9296a0;
+}
+
+.formIntro > p {
+  max-width: 350px;
+  color: #888;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.supportBox {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-top: 55px;
+  padding: 18px;
+  background: white;
+  border-radius: 9px;
+}
+
+.supportIcon {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  background: #f1f2f5;
+  font-size: 19px;
+}
+
+.supportBox h3 {
+  font-size: 13px;
+  margin-bottom: 7px;
+}
+
+.supportBox p {
+  color: #999;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+
+
+.formCard {
+  padding: 35px;
+  background: white;
+  border-radius: 11px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.035);
+}
+
+.formHeader {
+  margin-bottom: 28px;
+}
+
+.formHeader h3 {
+  font-size: 23px;
+  letter-spacing: -0.5px;
+  margin-bottom: 8px;
+}
+
+.formHeader p {
+  color: #999;
+  font-size: 11px;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 17px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.formGroup label {
+  color: #444;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+  width: 100%;
+  padding: 14px 15px;
+  outline: none;
+  border: 1px solid #e6e6e6;
+  border-radius: 6px;
+  background: #fff;
+  color: #171717;
+  font-family: inherit;
+  font-size: 12px;
+  transition: 0.2s;
+}
+
+.formGroup input,
+.formGroup select {
+  height: 47px;
+}
+
+.formGroup input::placeholder,
+.formGroup textarea::placeholder {
+  color: #aaa;
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+  border-color: #777;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.035);
+}
+
+.formGroup select {
+  cursor: pointer;
+}
+
+.formGroup textarea {
+  resize: vertical;
+  min-height: 140px;
+  line-height: 1.7;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border: none;
+  border-radius: 6px;
+  background: #171717;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.submitButton:hover {
+  background: #444;
+}
+
+.submitButton span {
+  font-size: 17px;
+}
+
+
+
+.successMessage {
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 25px;
+}
+
+.successIcon {
+  width: 65px;
+  height: 65px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #edf7f0;
+  color: #20854b;
+  font-size: 30px;
+  margin-bottom: 22px;
+}
+
+.successMessage h3 {
+  font-size: 21px;
+  margin-bottom: 12px;
+}
+
+.successMessage p {
+  max-width: 360px;
+  color: #888;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.successMessage button {
+  margin-top: 22px;
+  padding: 13px 20px;
+  background: #171717;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+
+.faqSection {
+  width: min(1200px, 90%);
+  margin: 110px auto;
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.faqIntro h2 {
+  font-size: clamp(34px, 4vw, 45px);
+  line-height: 1.15;
+  letter-spacing: -2px;
+  margin-bottom: 18px;
+}
+
+.faqIntro h2 span {
+  color: #9296a0;
+}
+
+.faqIntro > p {
+  color: #888;
+  font-size: 13px;
+  line-height: 1.9;
+  max-width: 360px;
+}
+
+.faqIntro > button {
+  margin-top: 27px;
+  padding: 0;
+  border: none;
+  background: none;
+  color: #171717;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.faqIntro > button span {
+  margin-left: 10px;
+}
+
+.faqList {
+  border-top: 1px solid #eee;
+}
+
+.faqItem {
+  padding: 22px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.faqItem summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  list-style: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.faqItem summary::-webkit-details-marker {
+  display: none;
+}
+
+.faqArrow {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #f3f4f6;
+  font-size: 19px;
+  transition: transform 0.2s;
+}
+
+.faqItem[open] .faqArrow {
+  transform: rotate(45deg);
+}
+
+.faqItem > p {
+  padding: 16px 40px 0 0;
+  color: #888;
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+
+
+.bottomBanner {
+  position: relative;
+  width: min(1200px, 90%);
+  min-height: 280px;
+  margin: 90px auto 70px;
+  padding: 45px 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  border-radius: 14px;
+  background: #17191f;
+  color: white;
+  overflow: hidden;
+}
+
+.bannerContent {
+  position: relative;
+  z-index: 2;
+}
+
+.bannerContent > span {
+  color: #aaa;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.bannerContent h2 {
+  font-size: clamp(30px, 4vw, 42px);
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+  margin: 17px 0;
+}
+
+.bannerContent p {
+  color: #aaa;
+  font-size: 12px;
+  line-height: 1.8;
+  max-width: 420px;
+}
+
+.bottomBanner > button {
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+  padding: 15px 20px;
+  background: white;
+  color: #171717;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.bottomBanner > button:hover {
+  transform: translateY(-3px);
+}
+
+.bottomBanner > button span {
+  margin-left: 13px;
+}
+
+.bannerDecoration {
+  position: absolute;
+  right: 27%;
+  top: -40px;
+  color: rgba(255, 255, 255, 0.06);
+  font-size: 280px;
+  pointer-events: none;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+  .heroContainer {
+    gap: 25px;
+  }
+
+  .heroContent h1 {
+    font-size: 49px;
+  }
+
+  .infoGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .formSection {
+    gap: 35px;
+    padding: 35px;
+  }
+
+  .faqSection {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero {
+    padding: 45px 0;
+  }
+
+  .heroContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .heroContent h1 {
+    font-size: 45px;
+    letter-spacing: -2px;
+  }
+
+  .heroVisual {
+    min-height: 320px;
+  }
+
+  .visualCircle {
+    width: 270px;
+    height: 270px;
+  }
+
+  .heroVisual > img {
+    height: 270px;
+  }
+
+  .floatingMessage {
+    bottom: 0;
+  }
+
+  .contactInfoSection {
+    margin: 65px auto;
+  }
+
+  .infoGrid {
+    gap: 12px;
+  }
+
+  .infoCard {
+    padding: 22px 15px;
+  }
+
+  .formSection {
+    margin: 70px auto;
+    padding: 30px 20px;
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .supportBox {
+    margin-top: 25px;
+  }
+
+  .formCard {
+    padding: 25px 20px;
+  }
+
+  .faqSection {
+    margin: 70px auto;
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .bottomBanner {
+    padding: 35px 25px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bannerDecoration {
+    right: -35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroContent h1 {
+    font-size: 39px;
+  }
+
+  .heroButtons button {
+    padding: 13px;
+  }
+
+  .heroVisual {
+    min-height: 280px;
+  }
+
+  .heroVisual > img {
+    height: 235px;
+  }
+
+  .visualCircle {
+    width: 230px;
+    height: 230px;
+  }
+
+  .infoGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .sectionHeading h2 {
+    font-size: 29px;
+  }
+
+  .formRow {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .formIntro h2,
+  .faqIntro h2 {
+    font-size: 35px;
+  }
+
+  .formCard {
+    padding: 22px 16px;
+  }
+
+  .bottomBanner h2 {
+    font-size: 31px;
+  }
+}

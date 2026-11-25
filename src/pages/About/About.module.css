@@ -1,0 +1,932 @@
+
+.aboutPage {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  color: #171717;
+}
+
+/* HERO */
+
+.hero {
+  background: #f4f5f7;
+  padding: 65px 0 40px;
+}
+
+.heroContainer {
+  width: min(1200px, 90%);
+  min-height: 470px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 50px;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+}
+
+.eyebrow,
+.sectionEyebrow {
+  display: block;
+  color: #888;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+.heroContent h1 {
+  font-size: clamp(44px, 5vw, 67px);
+  line-height: 1.08;
+  letter-spacing: -3px;
+  font-weight: 800;
+  margin-bottom: 22px;
+}
+
+.heroContent h1 span {
+  color: #858995;
+}
+
+.heroContent > p {
+  max-width: 470px;
+  color: #777;
+  font-size: 14px;
+  line-height: 1.9;
+  margin-bottom: 30px;
+}
+
+.heroButtons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.primaryButton,
+.secondaryButton {
+  padding: 15px 20px;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.primaryButton {
+  background: #171717;
+  color: white;
+  border: 1px solid #171717;
+}
+
+.primaryButton span {
+  margin-left: 15px;
+  font-size: 17px;
+}
+
+.primaryButton:hover {
+  background: #444;
+  transform: translateY(-3px);
+}
+
+.secondaryButton {
+  background: transparent;
+  color: #171717;
+  border: 1px solid #ccc;
+}
+
+.secondaryButton:hover {
+  background: white;
+}
+
+/* HERO VISUAL */
+
+.heroVisual {
+  position: relative;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroCircle {
+  position: absolute;
+  width: 370px;
+  height: 370px;
+  background: #e2e4e9;
+  border-radius: 50%;
+}
+
+.heroVisual > img {
+  position: relative;
+  z-index: 1;
+  width: 88%;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 12px;
+  transform: rotate(2deg);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+}
+
+.heroFloatingCard {
+  position: absolute;
+  z-index: 3;
+  left: -5px;
+  bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 17px 20px;
+  background: white;
+  border-radius: 9px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.09);
+}
+
+.floatingIcon {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  background: #f2f3f5;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.heroFloatingCard strong {
+  font-size: 12px;
+}
+
+.heroFloatingCard p {
+  color: #999;
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+.heroSideText {
+  position: absolute;
+  z-index: 2;
+  top: 30px;
+  right: -30px;
+  color: #888;
+  font-size: 8px;
+  letter-spacing: 2px;
+  writing-mode: vertical-rl;
+}
+
+.heroBottom {
+  width: min(1200px, 90%);
+  margin: 30px auto 0;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.heroBottom > span:first-child {
+  color: #888;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+.bottomLine {
+  width: 65px;
+  height: 1px;
+  background: #bbb;
+}
+
+/* STORY */
+
+.storySection {
+  width: min(1200px, 90%);
+  margin: 110px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 90px;
+  align-items: center;
+}
+
+.storyImages {
+  position: relative;
+  min-height: 440px;
+}
+
+.storyMainImage {
+  width: 80%;
+  height: 390px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.storyMainImage img,
+.storySmallImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.storySmallImage {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 48%;
+  height: 210px;
+  padding: 8px;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+}
+
+.storySmallImage img {
+  border-radius: 7px;
+}
+
+.storyImageBadge {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #171717;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.storyImageBadge span {
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.storyImageBadge strong {
+  font-size: 17px;
+  margin-top: 5px;
+}
+
+.storyContent h2,
+.missionContent h2,
+.whyContent h2 {
+  font-size: clamp(34px, 4vw, 47px);
+  line-height: 1.15;
+  letter-spacing: -2px;
+  margin-bottom: 24px;
+}
+
+.storyContent h2 span,
+.missionContent h2 span,
+.whyContent h2 span {
+  color: #9296a0;
+}
+
+.storyContent > p {
+  color: #858585;
+  font-size: 13px;
+  line-height: 1.9;
+  margin-bottom: 16px;
+}
+
+.textButton {
+  margin-top: 15px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.textButton span {
+  margin-left: 12px;
+}
+
+.textButton:hover {
+  color: #777;
+}
+
+/* STATS */
+
+.statsSection {
+  padding: 80px 5%;
+  background: #f5f6f8;
+}
+
+.statsHeader {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 50px;
+}
+
+.statsHeader h2 {
+  font-size: clamp(28px, 4vw, 39px);
+  letter-spacing: -1.5px;
+  margin-bottom: 13px;
+}
+
+.statsHeader h2 span {
+  color: #858995;
+}
+
+.statsHeader > p {
+  color: #888;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.statsGrid {
+  width: min(1200px, 100%);
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.statItem {
+  padding: 30px 22px;
+  text-align: center;
+  border-right: 1px solid #dddfe3;
+}
+
+.statItem:last-child {
+  border: none;
+}
+
+.statItem h3 {
+  font-size: 25px;
+  letter-spacing: -0.7px;
+  margin-bottom: 7px;
+}
+
+.statItem > span {
+  display: block;
+  color: #818592;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.statItem p {
+  margin-top: 12px;
+  color: #999;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+/* MISSION AND VISION */
+
+.missionSection {
+  width: min(1200px, 90%);
+  margin: 110px auto;
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  align-items: center;
+  gap: 65px;
+}
+
+.missionContent > p {
+  max-width: 370px;
+  color: #888;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.missionCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.missionCard,
+.visionCard {
+  min-height: 290px;
+  padding: 27px 23px;
+  border-radius: 12px;
+}
+
+.missionCard {
+  background: #f3f4f6;
+}
+
+.visionCard {
+  background: #17191f;
+  color: white;
+}
+
+.missionIcon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.75);
+  color: #171717;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.missionCard > span,
+.visionCard > span {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #888;
+}
+
+.missionCard h3,
+.visionCard h3 {
+  font-size: 19px;
+  line-height: 1.4;
+  margin: 12px 0;
+}
+
+.missionCard p,
+.visionCard p {
+  color: #888;
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+.visionCard .missionIcon {
+  background: #33353b;
+  color: white;
+}
+
+/* VALUES */
+
+.valuesSection {
+  width: min(1200px, 90%);
+  margin: 110px auto;
+}
+
+.sectionHeader {
+  margin-bottom: 35px;
+}
+
+.sectionHeader h2 {
+  font-size: 39px;
+  letter-spacing: -1.5px;
+  margin-bottom: 12px;
+}
+
+.sectionHeader h2 span {
+  color: #9296a0;
+}
+
+.sectionHeader p {
+  color: #888;
+  font-size: 13px;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.valueCard {
+  position: relative;
+  padding: 25px 20px 30px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.valueCard:hover {
+  transform: translateY(-6px);
+  border-color: #ccc;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+}
+
+.valueTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.valueIcon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  background: #f3f4f6;
+  border-radius: 10px;
+  font-size: 23px;
+}
+
+.valueTop > span {
+  color: #aaa;
+  font-size: 11px;
+}
+
+.valueCard h3 {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.valueCard > p {
+  color: #888;
+  font-size: 11px;
+  line-height: 1.8;
+  min-height: 60px;
+}
+
+.valueLine {
+  height: 2px;
+  width: 35px;
+  background: #171717;
+  margin-top: 25px;
+  transition: 0.3s;
+}
+
+.valueCard:hover .valueLine {
+  width: 75px;
+}
+
+/* WHY CHOOSE US */
+
+.whySection {
+  width: min(1200px, 90%);
+  margin: 110px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 80px;
+}
+
+.whyVisual {
+  height: 470px;
+  position: relative;
+}
+
+.whyVisual > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.whyImageLabel {
+  position: absolute;
+  left: -20px;
+  bottom: 25px;
+  max-width: 270px;
+  padding: 20px 25px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+}
+
+.whyImageLabel span {
+  display: block;
+  color: #999;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+}
+
+.whyImageLabel strong {
+  font-size: 15px;
+}
+
+.whyDescription {
+  color: #888;
+  font-size: 13px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.advantageList {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.advantageItem {
+  display: flex;
+  gap: 18px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.advantageNumber {
+  color: #aaa;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.advantageItem h3 {
+  font-size: 15px;
+  margin-bottom: 7px;
+}
+
+.advantageItem p {
+  color: #888;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+/* CTA */
+
+.ctaSection {
+  position: relative;
+  width: min(1200px, 90%);
+  min-height: 340px;
+  margin: 90px auto 70px;
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #17191f;
+  color: white;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.ctaContent {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+}
+
+.ctaContent > span {
+  color: #aaa;
+  font-size: 9px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.ctaContent h2 {
+  font-size: clamp(34px, 4vw, 48px);
+  line-height: 1.15;
+  letter-spacing: -2px;
+  margin: 20px 0 15px;
+}
+
+.ctaContent p {
+  color: #aaa;
+  font-size: 12px;
+  line-height: 1.8;
+  max-width: 430px;
+  margin: 0 auto;
+}
+
+.ctaContent button {
+  margin-top: 27px;
+  padding: 15px 21px;
+  background: white;
+  color: #171717;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.ctaContent button:hover {
+  transform: translateY(-3px);
+}
+
+.ctaContent button span {
+  margin-left: 14px;
+}
+
+.ctaDecoration {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.ctaDecoration span {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.09);
+}
+
+.ctaDecoration span:nth-child(1) {
+  top: 35px;
+  left: 10%;
+  font-size: 65px;
+}
+
+.ctaDecoration span:nth-child(2) {
+  right: 10%;
+  top: 30px;
+  font-size: 90px;
+}
+
+.ctaDecoration span:nth-child(3) {
+  bottom: 20px;
+  left: 20%;
+  font-size: 100px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+  .heroContainer {
+    gap: 25px;
+  }
+
+  .heroContent h1 {
+    font-size: 49px;
+  }
+
+  .storySection {
+    gap: 45px;
+  }
+
+  .missionSection {
+    gap: 30px;
+  }
+
+  .whySection {
+    gap: 40px;
+  }
+
+  .valuesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .hero {
+    padding: 45px 0 30px;
+  }
+
+  .heroContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .heroContent h1 {
+    font-size: 45px;
+  }
+
+  .heroVisual {
+    min-height: 320px;
+  }
+
+  .heroCircle {
+    width: 270px;
+    height: 270px;
+  }
+
+  .heroVisual > img {
+    height: 270px;
+  }
+
+  .heroSideText {
+    right: 0;
+  }
+
+  .storySection {
+    margin: 70px auto;
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .storyImages {
+    min-height: 370px;
+  }
+
+  .storyMainImage {
+    height: 330px;
+  }
+
+  .storySmallImage {
+    height: 170px;
+  }
+
+  .statsSection {
+    padding: 65px 5%;
+  }
+
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .statItem:nth-child(2) {
+    border-right: none;
+  }
+
+  .missionSection {
+    margin: 70px auto;
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .valuesSection {
+    margin: 70px auto;
+  }
+
+  .whySection {
+    margin: 70px auto;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .whyVisual {
+    height: 350px;
+  }
+
+  .whyImageLabel {
+    left: 10px;
+  }
+
+  .ctaSection {
+    padding: 45px 20px;
+    min-height: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroContent h1 {
+    font-size: 39px;
+    letter-spacing: -2px;
+  }
+
+  .heroButtons {
+    align-items: stretch;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    padding: 13px;
+  }
+
+  .storyImages {
+    min-height: 300px;
+  }
+
+  .storyMainImage {
+    width: 85%;
+    height: 270px;
+  }
+
+  .storySmallImage {
+    width: 50%;
+    height: 140px;
+  }
+
+  .storyImageBadge {
+    width: 75px;
+    height: 75px;
+  }
+
+  .storyImageBadge strong {
+    font-size: 14px;
+  }
+
+  .storyImageBadge span {
+    font-size: 8px;
+  }
+
+  .statsGrid {
+    gap: 8px;
+  }
+
+  .statItem {
+    padding: 22px 10px;
+  }
+
+  .statItem h3 {
+    font-size: 20px;
+  }
+
+  .missionCards {
+    grid-template-columns: 1fr;
+  }
+
+  .missionCard,
+  .visionCard {
+    min-height: 240px;
+  }
+
+  .sectionHeader h2 {
+    font-size: 31px;
+  }
+
+  .valuesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .valueCard {
+    padding: 23px;
+  }
+
+  .whyVisual {
+    height: 290px;
+  }
+
+  .ctaContent h2 {
+    font-size: 35px;
+  }
+}

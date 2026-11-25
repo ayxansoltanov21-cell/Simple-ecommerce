@@ -1,0 +1,88 @@
+
+.header {
+  width: 100%;
+  background-color: #111827;
+  padding: 18px 0;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.15);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 800;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.link:hover {
+  color: #60a5fa;
+}
+
+.loginBtn {
+  padding: 10px 22px;
+  background-color: #3b82f6;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.loginBtn:hover {
+  background-color: #2563eb;
+}
+
+@media (max-width: 650px) {
+  .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .list {
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .link {
+    font-size: 14px;
+  }
+}

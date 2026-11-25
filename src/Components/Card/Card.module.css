@@ -1,0 +1,166 @@
+
+.card {
+  width: 100%;
+  max-width: 290px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  border-color: #d1d5db;
+}
+
+/* Image */
+
+.imageContainer {
+  width: 100%;
+  height: 210px;
+  background-color: #f3f4f6;
+  position: relative;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.07);
+}
+
+.category {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: #ffffff;
+  color: #374151;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 11px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.favoriteBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #374151;
+  font-size: 23px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.favoriteBtn:hover {
+  background-color: #fee2e2;
+  color: #ef4444;
+}
+
+/* Content */
+
+.content {
+  padding: 17px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 10px;
+}
+
+.star {
+  color: #f59e0b;
+  font-size: 17px;
+}
+
+.ratingText {
+  color: #9ca3af;
+  font-weight: 400;
+}
+
+.name {
+  font-size: 17px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 9px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.description {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #6b7280;
+  margin: 0;
+  height: 42px;
+  overflow: hidden;
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid #f3f4f6;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: 800;
+  color: #111827;
+  white-space: nowrap;
+}
+
+.currency {
+  font-size: 15px;
+  color: #6b7280;
+  margin-right: 2px;
+}
+
+.addBtn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.addBtn span {
+  font-size: 17px;
+}
+
+.addBtn:hover {
+  background-color: #1d4ed8;
+}
